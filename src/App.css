@@ -1094,18 +1094,19 @@ main {
   .nav-links {
     position: fixed;
     inset: 0;
-    width: 100vw;
+    left: auto;
+    width: min(320px, 82vw);
     min-height: 100dvh;
-    padding: 100px 22px 22px;
-    border-radius: 0;
-    border: 1px solid rgba(148, 163, 184, 0.12);
-    background: linear-gradient(180deg, #0c213e 0%, #102a4c 100%);
+    padding: 100px 18px 22px;
+    border-radius: 18px 0 0 18px;
+    border: 1px solid rgba(227, 164, 95, 0.2);
+    background: linear-gradient(180deg, rgba(20, 26, 21, 0.99), rgba(14, 18, 15, 0.99));
     display: none;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
     gap: 4px;
-    box-shadow: 18px 0 48px rgba(0, 0, 0, 0.34);
+    box-shadow: -18px 0 48px rgba(0, 0, 0, 0.34);
     overflow: hidden;
     z-index: 60;
   }
@@ -1120,7 +1121,7 @@ main {
     min-height: 44px;
     padding: 10px 16px;
     border-radius: 12px;
-    color: #c2cfdf;
+    color: var(--muted-strong);
     font-size: 1rem;
     font-weight: 650;
     text-align: left;
@@ -1128,17 +1129,18 @@ main {
 
   .nav-links .nav-item.active,
   .nav-links .nav-item:hover {
-    color: #fff;
-    border-color: transparent;
-    background: #1677f2;
-    box-shadow: 0 10px 24px rgba(22, 119, 242, 0.24);
+    color: #24180e;
+    border-color: var(--primary);
+    background: var(--primary);
+    box-shadow: 0 10px 24px rgba(227, 164, 95, 0.2);
   }
 
   .nav-links .nav-cta {
     margin-top: 8px;
     min-height: 44px;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(227, 164, 95, 0.25);
+    background: rgba(227, 164, 95, 0.08);
   }
 
   .menu-toggle {
